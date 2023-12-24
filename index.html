@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Measurement Converter</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Measurement Converter</h2>
+    <div class="input-section">
+      <label for="fromUnit">Convert from:</label>
+      <select id="fromUnit" class="unit-select">
+        <option value="kilometers">Kilometers</option>
+        <option value="meters">Meters</option>
+        <option value="inches">Inches</option>
+        <option value="centimeters">Centimeters</option>
+        <option value="millimeters">Millimeters</option>
+      </select>
+
+      <input type="number" id="valueInput" placeholder="Enter value" class="value-input">
+
+      <label for="toUnit">Convert to:</label>
+      <select id="toUnit" class="unit-select">
+        <option value="kilometers">Kilometers</option>
+        <option value="meters">Meters</option>
+        <option value="inches">Inches</option>
+        <option value="centimeters">Centimeters</option>
+        <option value="millimeters">Millimeters</option>
+      </select>
+    </div>
+
+    <button onclick="convert()" class="convert-btn">Convert</button>
+    <div id="result" class="result-section"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
